@@ -1,0 +1,18 @@
+p { margin:0 }
+.paper {
+    border-radius: 5px;
+    border-width: 2px;
+    border-style: solid;
+    background: white;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 2px #999999;
+}
+
+.paperInfo {
+    flex: 1;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}

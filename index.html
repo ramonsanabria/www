@@ -8,10 +8,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bare - Start Bootstrap Template</title>
+    <title>Ramon Sanabria</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="index.css">
+
 
     <!-- Custom styles for this template -->
     <style>
@@ -33,48 +36,143 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">Start Bootstrap</a>
+        <a class="navbar-brand" href="#"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home
+              <a class="nav-link" href="#">about
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="publications.html">publications</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="blog.html">blog</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="music.html">music</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- Page Content -->
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h1 class="mt-5">A Bootstrap 4 Starter Template</h1>
-          <p class="lead">Complete with pre-defined file paths and responsive navigation!</p>
-          <ul class="list-unstyled">
-            <li>Bootstrap 4.0.0-beta</li>
-            <li>jQuery 3.2.1</li>
-          </ul>
-        </div>
-      </div>
-    </div>
+
+
+<br>
+<div class="contact">
+<div class="row">
+
+	<div class="col-1"></div>
+
+	<div class="col-4 nopadding">
+
+			<div class="w3-content w3-section" style="max-width:500px">
+			  <img class="mySlides" src="dali.jpg" style="width:100%">
+<!--
+			  <img class="mySlides" src="matrix.png" style="width: 100%">
+-->
+
+			  <img class="mySlides" src="normramons.jpg" style="width:100%">
+
+			</div>
+
+	</div>
+	<div class="col-6 nopadding">
+		<div class="row">
+			<div id="bioInfo">
+				    <h1>Ramon Sanabria</h1>
+				    <br>
+				    <p class="text-justify">Graduate student</p>
+				    <p class="text-justify">Language Technology Institute, School Of Computer Science
+				    </p>
+				    <p class="text-justify">Carnegie Mellon University
+				    </p>
+				    <p>Email: 
+					<a href="mailto:ramons@cs.cmu.edu">ramons[at]cs.cmu.edu</a>
+				    </p>
+				       <p>Office:
+					<a href="https://www.google.com/maps/place/407+South+Craig,+407+S+Craig+St,+Pittsburgh,+PA+15213/@40.4449953,-79.9505935,17z/data=!3m1!4b1!4m5!3m4!1s0x8834f2241e5adf11:0x7d2a8a69dbb0c682!8m2!3d40.444998!4d-79.9484313">209
+		407 South Craig Street</a>
+				    </p>
+			</div>
+		</div>
+		<br>
+
+	</div>
+
+</div>
+
+<br>
+<div class="row">
+	<div class="col-1"></div>
+
+
+	<div class="col-10">
+	  <div class="infoDiv">
+	    <h2> About the guy up here</h2>
+	    <p> Ramon Sanabria is a graduate student advised by <a href="http://www.cs.cmu.edu/~fmetze/interACT/Home.html">Prof. Florian Metze</a> at Carnegie Mellon University (CMU), in the School of Computer Science’s <a href="https://www.lti.cs.cmu.edu"> Language Technologies Institute</a> (LTI). His main interests are in the areas machine learning and sequence labeling. More concretely, his current research focuses on adding physical and abstract context to speech recognition systems.</p>
+<br>
+	    <p> 
+
+Before joining the LTI he worked with <a href="http://www.cs.cmu.edu/~ftorre/">Prof. Fernando De La Torre</a> and Francisco Vicente in the <a href="https://www.ri.cmu.edu/">Robotics Institute</a> at CMU. He obtained his B.Sc. degree in Audiovisual Engineering from La Salle University advised by <a href="http://web.salleurl.edu/~iriondo/">Prof. Ignasi Iriondo</a>, where he collaborated with PAL Robotics under the supervision of <a href="https://github.com/jordi-adell">Dr. Jordi Adell</a>.
+
+	    </p>
+
+    	  </div>
+    	</div>
+
+	<div class="col-1"></div>
+
+
+</br>
+
+</div>
+
+</div>
+
+
+
+	<script>
+	var myIndex = 0;
+	carousel();
+
+	function carousel() {
+	    var i;
+	    var x = document.getElementsByClassName("mySlides");
+	    for (i = 0; i < x.length; i++) {
+	       x[i].style.display = "none";  
+	    }
+	    myIndex++;
+	    if (myIndex > x.length) {myIndex = 1}    
+	    x[myIndex-1].style.display = "block";  
+	    setTimeout(carousel, 2000); // Change image every 2 seconds
+	}
+
+	</script>
+
+
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+	<script>
+	function myMap() {
+	  var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+	  var mapCanvas = document.getElementById("map");
+	  var mapOptions = {center: myCenter, zoom: 5};
+	  var map = new google.maps.Map(mapCanvas, mapOptions);
+	  var marker = new google.maps.Marker({position:myCenter});
+	  marker.setMap(map);
+	}
+	</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuOT3kAGeKWNgNdT9Q4Up3MAqk_MKO-ZE&callback=myMap"></script>
 
   </body>
 
